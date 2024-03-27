@@ -39,7 +39,7 @@ for target in "${objective_arr[@]}" ; do
                 --bo_batch_size=5 \
                 \
                 --output_path="${output_path}" \
-                --extra_output_path="${extra_output}" #&> "${log_dir}/${method_name}-${target}_trial${trial}.log"
+                --extra_output_path="${extra_output}" &> "${log_dir}/${method_name}-${target}_trial${trial}.log"
                 echo $log_dir 
 
 
